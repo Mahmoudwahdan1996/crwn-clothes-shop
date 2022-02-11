@@ -1,0 +1,15 @@
+# Local Netlify folder
+.netlify
+
+# Local Netlify folder
+.netlify
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# production
+/build
+
+.netlify.toml

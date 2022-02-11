@@ -1,0 +1,26 @@
+import React from "react";
+
+import {
+  GroupContainer,
+  FormInputContainer,
+  FormInputLabel,
+} from "./form-input.styles";
+
+const FormInput = ({  label, Register , name, ...otherProps }) => {
+  return (
+    <GroupContainer>
+      <FormInputContainer
+      //  onChange={handleChange} 
+       {...Register(name)}
+       {...otherProps }
+      />
+      {label ? (
+        <FormInputLabel className={otherProps.value.length ? "shrink" : ""}>
+          {label}
+        </FormInputLabel>
+      ) : null}
+    </GroupContainer>
+  );
+};
+
+export default FormInput;
